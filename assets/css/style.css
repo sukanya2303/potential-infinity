@@ -2536,6 +2536,7 @@ textarea.is-invalid {
 .th-menu-wrapper .mobile-logo {
   padding-bottom: 30px;
   padding-top: 40px;
+  padding: 40px 20px 30px 20px;
   display: block;
   text-align: center;
   background-color: var(--theme-color);
