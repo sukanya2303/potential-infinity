@@ -2683,7 +2683,7 @@ textarea.is-invalid {
   padding: 0;
   font-size: 20px;
   border: none;
-  background-color: var(--theme-color);
+  background-color: transparent;
   color: var(--white-color);
   display: inline-block;
   border-radius: 5px;
@@ -3055,7 +3055,8 @@ textarea.is-invalid {
 }
 .th-btn.style-border3.th-btn-icon:after {
   filter: brightness(0) grayscale(9) invert(2);
-  color: #000000;
+  /* color: #000000; */
+  color: var(--theme-color2);
   width: 22px;
   height: 22px;
 }
@@ -3068,7 +3069,7 @@ textarea.is-invalid {
 }
 .th-btn.style-border3:hover {
   background: #fff;
-  color: #000;
+  color: var(--theme-color2);
 }
 .th-btn.style-border3:hover.th-btn-icon:after {
   filter: none;
