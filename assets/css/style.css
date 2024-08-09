@@ -100,7 +100,8 @@ Version: 1.0.0
   --black-color2: #1B1B1B;
   --black-color3: #1A1A1A;
   /* --gray-color: #DDE8DD; */
-  --gray-color: #BFCDD1;
+  /* --gray-color: #BFCDD1; */
+  --gray-color: #f2f2f2;
   /* --white-color: #ffffff; */
   --white-color: #000000;
   --light-color: #A4B5BA;
