@@ -3213,7 +3213,7 @@ textarea.is-invalid {
   line-height: var(--icon-size, 56px);
   text-align: center;
   background-color: var(--white-color);
-  color: var(--theme-color);
+  color: #f2f2f2;
   font-size: var(--icon-font-size, 1.4em);
   border-radius: 50%;
   z-index: 1;
@@ -12649,9 +12649,9 @@ span.select2-selection.select2-selection--single:focus {
 }
 .img-box2 .about-tag .play-btn i {
   line-height: 110px;
-  background: var(--gray-color);
+  background: var(--theme-color2);
   --icon-font-size: 26px;
-  border: 20px solid var(--white-color);
+  border: 20px solid #f5f5f5;
 }
 .img-box2 .about-tag .about-experience-tag {
   color: var(--title-color);
@@ -12702,7 +12702,7 @@ span.select2-selection.select2-selection--single:focus {
   content: "";
   position: absolute;
   inset: 0;
-  border: 5px solid var(--white-color);
+  border: 5px solid #f2f2f2;
   border-radius: 24px;
   transition: 0.4s;
 }
@@ -12737,7 +12737,7 @@ span.select2-selection.select2-selection--single:focus {
   width: 70px;
   height: 46px;
   line-height: 40px;
-  border: 3px solid var(--white-color);
+  border: 3px solid #fff;
 }
 .img-box2 .slider-arrow img {
   width: 24px;
