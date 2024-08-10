@@ -2278,12 +2278,12 @@ textarea.is-invalid {
   color: var(--theme-color);
 }
 .slider-arrow.style2 {
-  border: 1px solid var(--white-color);
+  border: 1px solid #fff;
   --icon-size: 48px;
   line-height: 46px;
 }
 .slider-arrow.style2:hover {
-  background: var(--title-dark);
+  background: var(--theme-color2);
   color: var(--white-color);
 }
 .slider-arrow.style2:hover img {
@@ -2291,13 +2291,14 @@ textarea.is-invalid {
 }
 .slider-arrow.style3 {
   border: 1px solid var(--white-color);
-  background: var(--white-color);
+  background: #fff;
   --icon-size: 48px;
   line-height: 46px;
 }
 .slider-arrow.style3:hover {
-  background: var(--theme-color);
-  color: var(--white-color);
+  background: var(--theme-color2);
+  border: 1px solid #fff;
+  color: #fff;
 }
 .slider-arrow.style3:hover img {
   filter: grayscale(9) invert(1);
@@ -3074,8 +3075,9 @@ textarea.is-invalid {
   color: var(--theme-color2);
 }
 .th-btn.style-border3:hover.th-btn-icon:after {
-  filter: none;
-  color: #000000;
+  /* filter: none;
+  color: #000000; */
+  filter: hue-rotate(140deg) brightness(1.2) saturate(1.5);
 }
 .th-btn.style-border3:hover .btn-icon {
   filter: none;
@@ -3267,7 +3269,7 @@ textarea.is-invalid {
   --icon-size: 80px;
   font-size: 22px;
   background-color: rgba(28, 45, 55, 0.5);
-  color: var(--white-color);
+  color: #fff;
 }
 .play-btn.style4:before, .play-btn.style4:after {
   background: transparent;
@@ -13030,7 +13032,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 .img-box3 .about-tag .play-btn i {
   line-height: 110px;
-  background: var(--light-color);
+  background: var(--theme-color2);
   --icon-font-size: 30px;
 }
 .img-box3 .about-tag .about-experience-tag {
@@ -14632,7 +14634,7 @@ span.select2-selection.select2-selection--single:focus {
   height: 28px;
 }
 .checklist li > i {
-  color: var(--theme-color);
+  color: var(--theme-color2);
   margin-top: 5px;
 }
 .checklist li:not(:last-child) {
@@ -17666,7 +17668,7 @@ span.select2-selection.select2-selection--single:focus {
   background: var(--theme-color2);
 }
 .property-page-single .property-meta a {
-  color: var(--theme-color);
+  color: var(--theme-color2);
   display: inline-flex;
   gap: 8px;
   align-items: center;
@@ -17675,17 +17677,17 @@ span.select2-selection.select2-selection--single:focus {
   font-size: 32px;
   font-weight: 600;
   letter-spacing: 0.02em;
-  color: var(--theme-color);
+  color: #0f0f0f;
 }
 .property-page-single p {
-  color: var(--theme-color);
+  color: #232323;
   font-size: 18px;
   line-height: 32px;
 }
 .property-page-single .property-grid-list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  background: var(--theme-color);
+  background: var(--theme-color2);
   border-radius: 8px;
   padding: 40px 45px;
   list-style: none;
@@ -17732,8 +17734,11 @@ span.select2-selection.select2-selection--single:focus {
   height: 44px;
   line-height: 39px;
   border-radius: 4px;
-  border: 1px solid rgba(164, 181, 186, 0.5);
+  border: 1px solid #f2f2f2;
   text-align: center;
+}
+.property-page-single .property-grid-list li .property-grid-list-icon img{
+  filter:  invert(0%) grayscale(0%) brightness(200%) contrast(200%);;
 }
 .property-page-single .property-grid-list li .property-grid-list-title {
   font-size: 14px;
@@ -17751,7 +17756,7 @@ span.select2-selection.select2-selection--single:focus {
 .property-page-single .checklist li {
   font-size: 16px;
   font-weight: 400;
-  color: var(--theme-color);
+  color: #232323;
 }
 .property-page-single .location-map {
   position: relative;
@@ -17895,11 +17900,11 @@ span.select2-selection.select2-selection--single:focus {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 35px;
-  color: var(--theme-color);
+  color: #000;
 }
 .property-grid-plan .property-grid-text {
   font-size: 18px;
-  color: var(--theme-color);
+  color: #232323;
   line-height: 1.777;
   margin-bottom: 0;
 }
