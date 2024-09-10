@@ -2339,15 +2339,15 @@ textarea.is-invalid {
 }
 .slider-arrow.style6 {
   border: 1px solid #fff;
-  background: transparent;
+  background: #fff;
   line-height: 53px;
   /* Medium devices */
 }
 .slider-arrow.style6 img {
-  filter: invert(1) contrast(9);
+  filter: invert(0) contrast(9);
 }
 .slider-arrow.style6:hover {
-  background: #000;
+  background: var(--theme-color2);
   /* border: 1px solid #000; */
 
 }
@@ -2727,6 +2727,13 @@ textarea.is-invalid {
     padding: 0 20px;
   }
 }
+
+
+.th-header .menu-area .active{
+    color: var(--theme-color2);
+  }  
+
+
 /*=================================
     03. Utilities
 ==================================*/
@@ -2997,6 +3004,7 @@ textarea.is-invalid {
 .th-btn.style-border.th-btn-icon:after {
   filter: brightness(0) grayscale(9) invert(2);
   /* color: var(--white-color); */
+  
   color: #fff;
   width: 22px;
   height: 22px;
@@ -3042,6 +3050,7 @@ textarea.is-invalid {
 .th-btn.style-border2:hover {
   background: var(--theme-color2);
   color: #fff;
+  border: 1px solid #fff;
 }
 .th-btn.style-border2:hover.th-btn-icon:after {
   filter: brightness(0) grayscale(9) invert(2);
@@ -3072,7 +3081,8 @@ textarea.is-invalid {
 }
 .th-btn.style-border3:hover {
   background: #fff;
-  color: var(--theme-color2);
+  /* color: var(--theme-color2); */
+  color: #000;
 }
 .th-btn.style-border3:hover.th-btn-icon:after {
   /* filter: none;
@@ -3214,8 +3224,9 @@ textarea.is-invalid {
   height: var(--icon-size, 56px);
   line-height: var(--icon-size, 56px);
   text-align: center;
-  background-color: var(--white-color);
+  /* background-color: var(--white-color); */
   color: #f2f2f2;
+  background-color: var(--theme-color2);
   font-size: var(--icon-font-size, 1.4em);
   border-radius: 50%;
   z-index: 1;
@@ -6495,11 +6506,13 @@ ol.wp-block-rss {
  
 }
 .th-widget-contact .info-box_text .details {
-  margin-top: -0.3em;
+  /* margin-top: -0.3em; */
+  margin-top: 5px;
 }
 .th-widget-contact .info-box_text .details p {
   margin-bottom: 0;
 }
+
 .th-widget-contact .info-box_text a {
   color: inherit;
 }
@@ -9059,7 +9072,7 @@ ul.comment-list .th-comment-item:first-child:not(.children .th-comment-item) > .
 }
 .hero-style2 .hero-title {
   margin-bottom: 15px;
-  font-size: 72px;
+  font-size: 55px;
   font-weight: 600;
 }
 .hero-style2 .hero-text {
@@ -12604,7 +12617,10 @@ span.select2-selection.select2-selection--single:focus {
   color: var(--title-color);
 }
 .call-btn .btn-text a {
-  color: var(--title-color);
+  /* color: var(--title-color); */
+  color: #3c3c3c;
+  font-size: 1.2rem;
+  font-weight:none;
 }
 .call-btn .btn-text a:hover {
   /* color: var(--theme-color); */
@@ -13054,7 +13070,8 @@ span.select2-selection.select2-selection--single:focus {
     transform: translate(-50%, -50%);
     z-index: 1;
     text-align: center;
-    background: var(--white-color);
+    /* background: var(--white-color); */
+    background: transparent;
     padding: 60px;
     border-radius: 50%;
   }
@@ -13321,7 +13338,7 @@ span.select2-selection.select2-selection--single:focus {
   visibility: visible;
 }
 
-/* Team Card 2---------------------------------- */
+/* Team Card 2-------------------- */
 .team-slider2 .slider-arrow {
   --pos-x: -25px;
 }
@@ -13459,7 +13476,8 @@ span.select2-selection.select2-selection--single:focus {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(28, 45, 55, 0.7);
+  /* background: rgba(28, 45, 55, 0.7); */
+  background: #00808078;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   opacity: 0;
@@ -13550,8 +13568,8 @@ span.select2-selection.select2-selection--single:focus {
   color: #fff;
 }
 .team-card.style3 .th-social a:hover {
-  background: var(--white-color);
-  color: var(--theme-color);
+  background: #fff;
+  color: var(--theme-color2);
 }
 .team-card.style3:hover .img-wrap:after {
   opacity: 1;
@@ -17578,23 +17596,25 @@ span.select2-selection.select2-selection--single:focus {
     width: 100%;
   }
 }
-.property-card2 .property-card-title {
+.property-card2 .property-card-title a{
   font-size: 24px;
   font-weight: 600;
-  color: var(--theme-color);
+  color: var(--theme-color2);
   margin-bottom: 13px;
   margin-top: -0.3em;
 }
 .property-card2 .property-card-price {
   font-size: 16px;
   font-weight: 500;
-  color: var(--theme-color);
+  /* color: var(--theme-color2); */
+  color: rgb(122, 122, 122);
   margin-bottom: 11px;
 }
 .property-card2 .property-card-location {
   font-size: 16px;
   font-family: var(--title-font);
-  color: var(--theme-color);
+  /* color: var(--theme-color2); */
+  color: rgb(122, 122, 122);
   margin-bottom: -0.3em;
 }
 .property-card2:hover .property-card-thumb img {
@@ -19159,7 +19179,7 @@ span.select2-selection.select2-selection--single:focus {
 
 .space-extra,
 .space-extra-bottom {
-  padding-bottom: calc(var(--section-space) - 30px);
+  /* padding-bottom: calc(var(--section-space) - 30px); */
 }
 
 .space-extra2,
@@ -19202,3 +19222,68 @@ span.select2-selection.select2-selection--single:focus {
     padding-bottom: 70px;
   }
 }/*# sourceMappingURL=style.css.map */
+
+
+
+.visit-gallery a{
+  color: var(--theme-color2);
+  content: "\27A0";
+  font-weight: bold;
+  
+}
+.visit-gallery a:hover{
+  animation-direction: normal;
+  color: #044f4f;
+}
+
+/* .projects-sec {
+  padding: 15px;
+} */
+
+.service-img {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+  /* border: 1px #000; */
+  background-color: #d8d8d847;
+  
+}
+.service-img:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.service-img h5{
+  margin-top: 20px;
+}
+
+/* Add shine effect if required */
+.img-shine img {
+  transition: transform 0.3s ease;
+}
+
+.img-shine img:hover {
+  transform: scale(1.1);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .service-img {
+      margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-img img {
+      width: 100%;
+  }
+}
+
+
+/* .property-page-single .page-content .projects-sec .service-img img{
+  
+} */
+
+.product-about{
+  margin-bottom: 10px;
+}
